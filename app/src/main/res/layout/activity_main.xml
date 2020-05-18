@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.czmp.http_request_bitcoin.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.czmp.http_request_bitcoin.MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-27dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:scaleType="fitXY"
+            android:text="@string/bitcoin_values"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="235dp"
+            android:layout_height="214dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:contentDescription="@string/bitcoin"
+            app:srcCompat="@drawable/bitcoin_70febb13356d2211d49f3650b69580afed295e40985dd4475ab4da9ab00889e9" />
+
+        <TextView
+            android:id="@+id/usdDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usdCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usdDesc"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/usdSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/usdCode"
+            android:layout_toEndOf="@id/usdCode"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usdRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usdCode"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/gbpDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usdRate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gbpCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gbpDesc"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/gbpSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/gbpCode"
+            android:layout_toEndOf="@id/gbpCode"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gbpRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gbpCode"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/eurDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gbpRate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eurCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eurDesc"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/eurSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/eurCode"
+            android:layout_toEndOf="@id/eurCode"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eurRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eurCode"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eurRate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updated"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
